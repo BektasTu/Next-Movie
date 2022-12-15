@@ -1,11 +1,13 @@
 import axios from "axios";
 import Hero from "../components/Hero";
+import PopularMovies from "../components/PopularMovies";
 import { server } from "../config";
 
 export default function Home({ movies }) {
   return (
     <div>
       <Hero />
+      <PopularMovies movies={movies.result} />
     </div>
   );
 }
