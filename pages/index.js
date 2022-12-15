@@ -5,9 +5,9 @@ import { server } from "../config";
 
 export default function Home({ movies }) {
   return (
-    <div>
+    <div className="bg-gray-700">
       <Hero />
-      <PopularMovies movies={movies.result} />
+      <PopularMovies movies={movies.results} />
     </div>
   );
 }

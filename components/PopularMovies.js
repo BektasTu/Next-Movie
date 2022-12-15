@@ -1,8 +1,14 @@
-const PopularMovies = (movies) => {
+import MoviesCard from "./MoviesCard";
+
+const PopularMovies = ({ movies }) => {
   return (
     <div className="bg-gray-700 container max-w-7xl mx-auto pb-10 px-4">
-      <h1 className="text-white text-2xl mt-8 mb-5">Die Populärsten Filme</h1>
-      {movies.map(movie =>)}
+      <h1 className="text-white text-2xl mt-8 mb-5">What's Popular</h1>
+      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        {movies.map((movie) => (
+          <MoviesCard movie={movie} key={movie.id} />
+        ))}
+      </div>
     </div>
   );
 };
