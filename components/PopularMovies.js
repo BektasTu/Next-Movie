@@ -1,4 +1,4 @@
-import MoviesCard from "./MoviesCard";
+import MovieCard from "./MovieCard";
 
 const PopularMovies = ({ movies }) => {
   return (
@@ -6,7 +6,7 @@ const PopularMovies = ({ movies }) => {
       <h1 className="text-white text-2xl mt-8 mb-5">Angesagte Filme</h1>
       <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {movies.map((movie) => (
-          <MoviesCard movie={movie} key={movie.id} />
+          <MovieCard movie={movie} key={movie.id} />
         ))}
       </div>
     </div>

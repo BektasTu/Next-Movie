@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const MoviesCard = ({ movie }) => {
+const MovieCard = ({ movie }) => {
   return (
     <Link href={`/movie/${movie.id}`} passHref>
       <div className="bg-white shadow-sm rounded-md cursor-pointer">
@@ -21,4 +21,4 @@ const MoviesCard = ({ movie }) => {
   );
 };
 
-export default MoviesCard;
+export default MovieCard;
